@@ -1,0 +1,64 @@
+.statues
+{
+    width: 50px;
+    height: 50px;
+}
+.one
+{
+    font-size:14px ;
+}
+.statues
+{
+    border-radius: 50%;
+    border:1px solid rgb(105, 54, 245,0.3);
+}
+.bg-trash
+{
+background-color:#6936F5 ;
+
+}
+.t-color
+{
+color:#6936F5 ;
+}
+.profile-img{
+    padding: 5px;
+    width: 120px;
+    height: 120px;
+    
+}
+.post-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.del-btn{
+    
+    height: 40px;
+    width: max-content;
+}
+
+.w-x{
+    width: 100%;
+}
+.btn {
+    color: #6936f5;
+    background-color: var(--bs-btn-hover-bg);
+    border: none;
+}
+.card-img-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; 
+    position: relative;
+  }
+  
+  .card-img-top.post-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  

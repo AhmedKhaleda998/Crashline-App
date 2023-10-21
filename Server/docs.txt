@@ -1,0 +1,25 @@
+POST '/register' -> register a new user, input: firstName, lastName, email, password
+POST '/login' -> user login, input: email, password
+
+
+GET '/posts/' ->  returns all feed posts, must be logged input
+GET '/posts/postId' -> returns the post details, must be logged in
+POST '/posts/' -> create a new post, input: title, content, image(optional), must be logged in
+PUT '/posts/postId' -> the user who created the post can update the existing post with that specific id, input: title(optional), content(optional), image(optional), must be logged in
+DELETE '/posts/postId' -> the user who created the post can delete the existing post with that specific id, must be logged in
+POST '/posts/postId/comment' -> any user can add comment to any existing post, input: content, must be logged in
+POST '/posts/postId/like' -> any user can like or unlike any existing post, must be logged in
+
+
+GET '/profile/userId' -> returns user data and posts of the user of this specific id
+GET '/profile/user/userId' -> returns only the user data of the user of this specific id
+PUT '/profile/picture/:userId' -> only the user himself can add or update his existing profile picture, input: picture, must be logged in
+DELETE '/profile/picture/:userId' -> only the user can delete his profile picture if exists, must be logged in
+PUT '/profile/password/:userId' -> only the user can change his password, input: oldPassword, newPassword, must be logged in
+PUT '/profile/name/:userId' -> only the user can change his firstName and lastName, input: firstName, lastName, must be logged in
+PUT '/profile/:followerId/follow' -> any user can follow or unfollow any other user but not himself (you can hide the button in this case better), must be logged in
+GET '/profile/:userId/followings' -> returns the followings of the user of this this specific id, must be logged in
+GET '/profile/:userId/followers' -> returns the followers of the user of this this specific id, must be logged in
+
+*must be logged in: add in the headers 'Authorization' : 'Bearer ' + token
+*userId, postId: replace each with its corresponding id  

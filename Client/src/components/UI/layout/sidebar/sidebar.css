@@ -1,0 +1,123 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+  display: block;
+    min-width: 200px;
+    max-width: 25%;
+    bottom: 0;
+    background: #ffffff;
+    color: #6936F5;
+    transition: all 0.3s;
+    height: 100vh;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    overflow-y: auto; 
+}
+
+#sidebar .sidebar-header {
+    padding: 15px 20px 8px 25px; 
+    background: #ffffff;
+}
+
+#sidebar ul.components {
+    padding:  1px;
+    border-bottom: 1px solid #ffffff;
+   
+}
+
+#sidebar ul li a {
+    padding: 10%;
+    
+    font-size: 1.2em;
+    display: block;
+    text-decoration: none;
+    color: #6936F5;
+    font-family: 'Poppins', sans-serif;
+    background: #fdfdfd;
+}
+
+#sidebar ul li a:hover {
+    color: #6936F5;
+    background: #fff;
+}
+
+.side-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    margin-left: 0px;
+    
+}
+.bott-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+#bottom-nav {
+    display: none;
+    background: #ffffff;
+    color: #6936F5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    z-index: 2;
+}
+
+.bottom-nav-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 0;
+    list-style: none; 
+}
+
+.bottom-icon {
+    width: 30px;
+    height: 30px;
+}
+
+#top-nav {
+  display: none;
+  background: #ffffff;
+  
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        display: none;
+    }
+
+    #bottom-nav {
+        display: block;
+    }
+    #top-nav{
+      display: block;
+    }
+}
+.outlined-icon {
+  border: 1px solid black;
+  border-radius: 50%; 
+}
+.fs{
+    font-size: 1.3em;
+    margin-right: 0;
+}
+.bi{
+    color: #6936F5;
+    font-size: x-large;
+    
+}
